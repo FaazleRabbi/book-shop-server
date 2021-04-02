@@ -53,6 +53,7 @@ client.connect((err) => {
       })
     })
 
+    
     app.get('/orders',(req, res)=>{
       console.log(req.query.email)
       ordersCollection.find({email:req.query.email})
